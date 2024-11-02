@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--  *****   Link To Custom CSS Style Sheet   *****  -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!--  *****   Link To Font Awsome Icons   *****  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+	<!--  *****   Link To Owl Carousel   *****  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Java FullStack Development</title>
+</head>
+
+
+
+
+
+	<!-- Inline CSS for Navbar Styling -->
+	<style>
+
+
+    *{
+      font-family: 'Roboto', sans-serif;
+    }
+		/* Navbar Styling */
+		.main-navbar {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10px;
+			background-color: #6363e0; /* Background color of the navbar */
+		}
+		.main-navbar .logo img {
+			width: 150px;
+		}
+		.nav-list {
+			list-style: none;
+			display: flex;
+			gap: 20px;
+			margin: 0;
+			padding: 0;
+		}
+		.nav-list li a {
+			color: #fff; /* Text color */
+			text-decoration: none;
+			font-size: 16px;
+			transition: color 0.3s;
+		}
+		.nav-list li a:hover {
+			color: #ff9800; /* Hover color */
+		}
+		.get-started-btn-container {
+			display: flex;
+			align-items: center;
+		}
+		.get-started-btn {
+			background-color: #ff9800;
+			border: none;
+			padding: 10px 20px;
+			color: #fff;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.get-started-btn:hover {
+			background-color: #ff7800; /* Hover background color */
+		}
+
+
+        .about-us-content {
+            
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+         /* Style for the container */
+    .container {
+      width: 50%;
+    
+      margin: auto;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Style for each course heading */
+    .course-title {
+      cursor: pointer;
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      outline: none;
+      text-align: left;
+      font-size: 18px;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Style for content under each heading */
+    .course-content {
+      display: none; /* Initially hidden */
+      padding: 20px;
+      margin-left: -80px;
+      border: 1px solid #ddd;
+      border-top: none;
+      font-size: 16px;
+    }
+
+    /* Change background color on hover */
+    .course-title:hover {
+      background-color: #0056b3;
+    }
+	</style>
+</head>
+<body>
+	<!-- Content here -->
+</body>
+</html>
+
+<body>
+<!--   *** Website Container Starts ***   -->
+<div class="website-container">
+	
+<!--   *** About Us Section Starts ***   -->
+<section class="about-us" id="about-us">
+	<!--   === Main Navbar Starts ===   -->
+	<nav class="main-navbar">
+		<a href="#" class="logo">
+			<img src="images/home/logo2.png">
+		</a>
+		<ul class="nav-list">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="course.html">Courses</a></li>
+			<li><a href="placement.html">Placement</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+		</ul>
+		<a style="text-decoration: none;" href="form.html" class="get-started-btn-container">
+			<button class="get-started-btn btn">Get Register</button>
+		</a>
+		<div class="menu-btn">
+			<span></span>
+		</div>
+	</nav>
+
+	<!-- Add About Us Heading and Paragraph Here -->
+     
+	
+        
+
+    <!-- Why Tech Hub Section -->
+    <h1 style="text-align: center; margin-top: 10px; font-family: 'Roboto', sans-serif;">Java Full Stack Developer Roadmap: The Key Steps to Build and Advance Your Skills</h1>
+    <div style="margin-top: 20px;" class="container">
+        
+        
+        
+        <h3 style="margin-top: 20px;">Course Content</h3>
+    
+        <!-- Course 1 -->
+        <button style="margin-top: 10px;" class="course-title" onclick="toggleContent('course1')">Logic Development</button>
+        <div id="course1" class="course-content">
+          <ul>
+            <li>Pattern Development</li>
+            <li>Arry Algorithm</li>
+            <li>String Algorithm</li>
+            <li>Recursive Algorithm</li>
+            <li>C Language Training For Non Computer Engineering Students & CSE Students Also If They Interested.</li>
+          </ul>
+        </div>
+    
+        <!-- Course 2 -->
+        <button class="course-title" onclick="toggleContent('course2')">Core Java</button>
+        <div id="course2" class="course-content">
+          <ul>
+            <li>Introduction Of Java</li>
+            <li>Version Details</li>
+            <li>Command Line Arguments</li>
+            <li>Datatypes & Oprator</li>
+            <li>Data Input Stream</li>
+            <li>Scanner</li>
+            <li>Array (Single Dimension)</li>
+            <li>Classes And Objects</li>
+            <li>Inner Classes</li>
+            <li>Array Of Objects</li>
+            <li>Static Variable</li>
+            <li>Static Function</li>
+            <li>Static Inner Class</li>
+            <li>Constructor & Types</li>
+            <li>Inheritence</li>
+            <li>Final Varible</li>
+            <li>Abstract Class And Abstract</li>
+            <li>Methods</li>
+            <li>Interface</li>
+            <li>Package</li>
+            <li>Exception Handling</li>
+            <li>Wrapper Classes</li>
+            <li>CCollection Framework</li>
+            <li>Map Interfac & Generics</li>
+            <li>Threading File Handling</li>
+            <li>Regular Expression</li>
+            <li>JDK 1.7</li>
+            <li>Updation</li>
+          </ul>
+        </div>
+    
+        <!-- Course 3 -->
+        <button class="course-title" onclick="toggleContent('course3')">Advance Java</button>
+        <div id="course3" class="course-content">
+          <ul>
+            <li>JDBC</li>
+            <li>Servlet</li>
+            <li>JSP</li>
+          </ul>
+        </div>
+
+         <!-- Course 4 -->
+        <button class="course-title" onclick="toggleContent('course4')">FrameWork</button>
+        <div id="course4" class="course-content">
+          <ul>
+            <li>Hibernate</li>
+            <li>Spring</li>
+            <li>Spring Core</li>
+            <li>Spring DAO</li>
+            <li>Spring ORM</li>
+            <li>Spring MVC</li>
+            <li>Spring AOP</li>
+            <li>Spring Boot</li>
+            <li>Web Services</li>
+          </ul>
+        </div>
+
+        <!-- Course 5 -->
+        <button class="course-title" onclick="toggleContent('course5')">HTML</button>
+        <div id="course5" class="course-content">
+          <ul>
+            <li>Introduction of HTML</li>
+            <li>Basic Tags</li>
+            <li>Form Controls</li>
+            <li>Image Control</li>
+            <li>Button Control</li>
+            <li>All HTML 5 Updates</li>
+
+          </ul>
+        </div>
+
+        <!-- Course 6 -->
+        <button class="course-title" onclick="toggleContent('course6')">CSS & Bootstrap</button>
+        <div id="course6" class="course-content">
+          <ul>
+            <li>Introduction of CSS</li>
+            <li>Borders</li>
+            <li>Backgrounds</li>
+            <li>Text Effects</li>
+            <li>Text</li>
+            <li>Fonts</li>
+            <li>Transforms</li>
+            <li>Transitions</li>
+            <li>Animations</li>
+            <li>Multiple Columns</li>
+            <li>User Interfaces</li>
+
+          </ul>
+        </div>
+
+        <!-- Course 7 -->
+        <button class="course-title" onclick="toggleContent('course7')">JavaScript</button>
+        <div id="course7" class="course-content">
+          <ul>
+            <li>Basics</li>
+            <li>Data Types & Type Conversion</li>
+            <li>JSON</li>
+            <li>Events</li>
+            <li>String and Date Functions</li>
+            <li>Object Oriented Programming (OOP) in JS</li>
+            <li>Document Object Model</li>
+            <li>Advanced JavaScript</li>
+            <li>Intro to Other JavaScript Courses</li>
+
+          </ul>
+        </div>
+
+        <!-- Course 8 -->
+        <button class="course-title" onclick="toggleContent('course8')">React Js</button>
+        <div id="course8" class="course-content">
+          <ul>
+            <li>Introduction of React</li>
+            <li>Node Repository</li>
+            <li>Components</li>
+            <li>Functional and Class Components</li>
+            <li>What Is JSX</li>
+            <li>JSX Expressions</li>
+            <li>State & The Context API</li>
+            <li>Working With Forms</li>
+            <li>Functional Component Lifecycle Hooks</li>
+            <li>Changing State From Another Component</li>
+            <li>Using The Context API & Provider State</li>
+            <li>Adding A Context Reducer For Actions</li>
+            <li>Creating A Form With State</li>
+            <li>Controlled Components & onChange</li>
+            <li>TextInputGroup Component For DRY Code</li>
+            <li>Working With Props</li>
+            <li>CSS In React</li>
+            <li>Lifecycle, HTTP & Deployment</li>
+            <li>Lifecycle Methods</li>
+            <li>AJAX</li>
+            <li>Axios</li>
+            <li>GET Requests</li>
+            <li>POST & DELETE Requests</li>
+            <li>API Service Calls</li>
+            <li>CRUD Operations</li>
+            <li>Using AsyncAwait</li>
+            <li>React Routing</li>
+            <li>React Router Setup</li>
+            <li>Links, Params & Redirect</li>
+            <li>Role-Based Routing</li>
+            <li>Authentication and Authorization</li>
+            <li>PUT Request & Update Action</li>
+
+          </ul>
+        </div>
+
+
+        <!-- Course 9 -->
+        <button class="course-title" onclick="toggleContent('course9')">SQL</button>
+        <div id="course9" class="course-content">
+          <ul>
+            <li>Introduction of SQL</li>
+            <li>DBMS Concept</li>
+            <li>DDL & DML Operations</li>
+            <li>Select Query in Detail</li>
+            <li>Joins and Its Implementation on Real-Time Database</li>
+            <li>Subquery</li>
+            <li>Aggregation Functions</li>
+            <li>Indexing</li>
+            <li>View</li>
+            <li>PL/SQL</li>
+            <li>Procedure</li>
+            <li>Function</li>
+            <li>Trigger</li>
+
+          </ul>
+        </div>
+
+        <!-- Course 10 -->
+        <button class="course-title" onclick="toggleContent('course10')">Quantitative Aptitude</button>
+        <div id="course10" class="course-content">
+          <ul>
+            <li>Average</li>
+            <li>Number</li>
+            <li>Compound Interest</li>
+            <li>Partnership</li>
+            <li>Problem on Ages</li>
+            <li>Calendar</li>
+            <li>Boats and Streams</li>
+            <li>Clocks</li>
+            <li>Height and Distance</li>
+            <li>Percentage</li>
+            <li>Pipes and Cisterns</li>
+            <li>Profit and Loss</li>
+            <li>Speed and Distance</li>
+            <li>Simple Interest</li>
+            <li>Problem on Trains</li>
+            <li>Time and Work</li>
+            <li>Alligation and Mixture</li>
+            <li>Surds and Indices</li>
+            <li>HCF and LCM</li>
+            <li>Area</li>
+            <li>Ratio and Proportion</li>
+            <li>Races and Games</li>
+            <li>Probability</li>
+            <li>Volume and Surface Area</li>
+            <li>Decimal Fraction</li>
+            <li>Simplification</li>
+            <li>Stocks and Shares</li>
+            <li>Chain Rule</li>
+            <li>True and Banker's Discount</li>
+            <li>Logarithm</li>
+            <li>Square Roots and Cube Roots</li>
+            <li>Problem on Numbers</li>
+            <li>Odd Man Out and Series</li>
+            <li>Algebraic Expressions</li>
+            <li>Permutation & Combination</li>
+
+          </ul>
+        </div>
+      </div>
+</section>
+
+<section style="margin-top: 20px;" class="footer" id="footer">
+	<!--   === Footer Contents Starts ===   -->
+	<div class="footer-contents">
+		<div class="footer-col footer-col-1">
+			<div class="col-title">
+				<img src="images/home/logo2.png">
+			</div>
+			<div class="col-contents">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+			</div>
+		</div>
+		<div class="footer-col footer-col-2">
+			<div class="col-title">
+				<h3>Contact</h3>
+			</div>
+			<div class="col-contents">
+				<div class="contact-row">
+					<span>Address</span>
+					<span>Sadashiv Peth, Pune</span>
+				</div>
+				<div class="contact-row">
+					<span>Phone</span>
+					<span>+91 8482925259</span>
+				</div>
+				<div class="contact-row">
+					<span>Email</span>
+					<span>Akash09punde@gmail.com</span>
+				</div>
+			</div>
+		</div>
+		<div class="footer-col footer-col-3">
+			<div class="col-title">
+				<h3>Quick Links</h3>
+			</div>
+			<div class="col-contents">
+				<a href="index.html">Home</a>
+				<a href="course.html">Courses</a>
+				<a href="placement.html">Placement</a>
+				<a href="about.html">About Us</a>
+				<a href="contact.html">Contact Us</a>
+			</div>
+		</div>
+	</div>
+	<!--   === Footer Contents Ends ===   -->
+	<div class="col-md-3">
+	  <div class="info_social">
+		<h4>Social Link</h4>
+		<div class="social_container">
+      <div><a href="https://www.facebook.com/share/UxEQbPMe1tcg2Dq6/"><i class="fab fa-facebook" aria-hidden="true"></i></a></div>
+		  <div><a href="https://youtube.com/@akashcareerpoint-hy2jb?si=rhdjARfoJAvHHg6n"><i class="fab fa-youtube" aria-hidden="true"></i></a></div>
+		  <div><a href="https://www.linkedin.com/in/akash-career-point-5b5a91284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin" aria-hidden="true"></i></a></div>
+		  <div><a href="https://www.instagram.com/akashcareerpoint/profilecard/?igsh=b2R2azk1OXhlcjQ4"><i class="fab fa-instagram" aria-hidden="true"></i></a></div>
+		</div>
+	  </div>
+	</div>
+</section>
+
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+<!--   *** Link To Owl Carousel ***   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!--   *** Link To Curstom Script File ***   -->
+<script type="text/javascript" src="script.js"></script>
+
+<script>
+    // Function to toggle content visibility
+    function toggleContent(id) {
+      var content = document.getElementById(id);
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>

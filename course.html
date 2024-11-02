@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--  **   Link To Custom CSS Style Sheet   **  -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!--  **   Link To Font Awsome Icons   **  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+    <!--  **   Link To Owl Carousel   **  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Registration Form</title>
+    
+    <!-- Form styling -->
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        .form-container {
+            background-color: #6363e0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            color: white;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 50px; /* Space between navbar and form */
+        }
+
+        .form-container h2 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .form-container p {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 10px 0 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+            width: 100%;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="tel"]:focus,
+        select:focus {
+            outline: none;
+            border: 2px solid #c4a112;
+        }
+
+        .mobile-input {
+            display: flex;
+        }
+
+        select#country-code {
+            width: 70px;
+            margin-right: 10px;
+        }
+
+        input#mobile {
+            flex-grow: 1;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: flex-start;
+            margin: 10px 0;
+            text-align: left;
+        }
+
+        .checkbox-container input {
+            margin-right: 10px;
+        }
+
+        button[type="submit"] {
+            background-color: #f5f5f5;
+            color: black;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #c4a112;
+        }
+       
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.courses-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1500px;
+  padding: 20px;
+  
+}
+
+.course-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 50px;
+  
+
+ 
+
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.course-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.course-category {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .courses-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+    </style>
+</head>
+<body>
+<!--   * Website Container Starts *   -->
+<div class="website-container">
+    
+    <!--   * Home Section Starts *   -->
+    <section class="home" id="home">
+        <!--   === Main Navbar Starts ===   -->
+        <nav class="main-navbar">
+            <a href="#" class="logo">
+                <img src="images/home/logo2.png">
+            </a>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="placement.html">Placement</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <a href="form.html" class="get-started-btn-container">
+                <button class="get-started-btn btn">Get Started</button>
+            </a>
+            <div class="menu-btn">
+                <span></span>
+            </div>
+            
+        </nav>
+
+        <!-- Add Home Content Here -->
+        
+
+        <!-- Registration Form Starts -->
+       
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses Page</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <div class="courses-container">
+        <div class="course-card">
+            <img src="images/courses/java.jpg" alt="Course 1" class="course-image">
+            <h3 class="course-title">Java Full-Stack Development : The Key Steps to Build and Advance Your Skills</h3>
+            <b><p class="course-category" style="margin-top: 30px; font-size: large; color: #6363e0;"><a href="java.html" style="text-decoration: none; color: #6363e0;">Read More</a></p></b>
+        </div>
+        
+        <div class="course-card">
+            <img src="images/courses/software2.jpg" alt="Course 2" class="course-image">
+            <h3 class="course-title">Software Testing : Software Manual Testing Course from Experienced Professional</h3>
+            <b><p class="course-category" style="margin-top: 30px; font-size: large; color: #6363e0;"><a href="software.html" style="text-decoration: none; color: #6363e0;">Read More</a></p></b>
+        </div>
+        
+        <div class="course-card">
+            <img src="images/courses/manual2.jpg" alt="Course 3" class="course-image">
+            <h3 class="course-title">Manual Testing: Tools and Techniques for Effective Bug Tracking</h3>
+            <b><p class="course-category" style="margin-top: 30px; font-size: large; color: #6363e0;"><a href="manual.html" style="text-decoration: none; color: #6363e0;">Read More</a></p></b>
+        </div>
+        
+        <div class="course-card">
+            <img src="images/courses/automation.jpg" alt="Course 4" class="course-image">
+            <h3 class="course-title">Automation Testing : Understanding Test Automation Frameworks and Their Types</h3>
+            <b><p class="course-category" style="margin-top: 30px; font-size: large; color: #6363e0;"><a href="automation.html" style="text-decoration: none; color: #6363e0;">Read More</a></p></b>
+        </div>
+        
+        <div class="course-card">
+            <img src="images/courses/business2.jpg" alt="Course 5" class="course-image">
+            <h3 class="course-title">Business Analysts : Skills Enhancement And Visualization Techniques</h3>
+            <b><p class="course-category" style="margin-top: 30px; font-size: large; color: #6363e0;"><a href="business.html" style="text-decoration: none; color: #6363e0;">Read More</a></p></b>
+        </div>
+    </div>
+</body>
+</html>
+           
+    
+            
+    
+        ]
+        <!-- Registration Form Ends -->
+
+    </section>
+
+    <!-- Footer Section Starts -->
+    <section class="footer" id="footer">
+        <div class="footer-contents">
+            <div class="footer-col footer-col-1">
+                <div class="col-title">
+                    <img src="images/home/logo2.png">
+                </div>
+                <div class="col-contents">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                </div>
+            </div>
+
+            <div class="footer-col footer-col-2">
+                <div class="col-title">
+                    <h3>Contact</h3>
+                </div>
+                <div class="col-contents">
+                    <div class="contact-row">
+                        <span>Address</span>
+                        <span>Sadashiv Peth, Pune</span>
+                    </div>
+                    <div class="contact-row">
+                        <span>Phone</span>
+                        <span>+91 8482925259</span>
+                    </div>
+                    <div class="contact-row">
+                        <span>Email</span>
+                        <span>Akash09punde@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-col footer-col-3">
+                <div class="col-title">
+                    <h3>Quick Links</h3>
+                </div>
+                <div class="col-contents">
+                    <a href="index.html">Home</a>
+                    <a href="course.html">Courses</a>
+                    <a href="placement.html">Placement</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="info_social">
+            <h4>Social Link</h4>
+            <div class="social_container">
+                <div><a href="https://www.facebook.com/share/UxEQbPMe1tcg2Dq6/"><i class="fab fa-facebook" aria-hidden="true"></i></a></div>
+                <div><a href="https://youtube.com/@akashcareerpoint-hy2jb?si=rhdjARfoJAvHHg6n"><i class="fab fa-youtube" aria-hidden="true"></i></a></div>
+                <div><a href="https://www.linkedin.com/in/akash-career-point-5b5a91284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin" aria-hidden="true"></i></a></div>
+                <div><a href="https://www.instagram.com/akashcareerpoint/profilecard/?igsh=b2R2azk1OXhlcjQ4"><i class="fab fa-instagram" aria-hidden="true"></i></a></div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+<!--   *** Link To Owl Carousel ***   -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<!--   *** Link To Curstom Script File ***   -->
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
